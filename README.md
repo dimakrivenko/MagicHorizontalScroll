@@ -7,6 +7,10 @@
 - section: Одна секция
 - scrollSpeed: Скорость прокрутки, изначальное значение 40 
 
+### Демо
+[Смотреть демо плагина](http://inwork.dimakrivenko.ru/magic-horizontal-scroll/example/example.html) 
+
+
 ### Пример 
 ```sh
 <link href="../magic-horizontal-scroll.css" rel="stylesheet">
