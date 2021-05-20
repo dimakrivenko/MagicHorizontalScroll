@@ -1,0 +1,19 @@
+
+
+
+
+
+#main-wrapper {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden
+}
+#main-wrapper .main-wrapper-scroll {
+    display: flex;
+    flex-wrap: wrap;
+}
+#main-wrapper .main-wrapper-scroll .section {
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicHorizontalScroll - Example</title>
+    <link href="./reset.css" rel="stylesheet">
+    <link href="../magic-horizontal-scroll.css" rel="stylesheet">
+    
+    <style>
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section h2 {
+            font-size: 40px;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <section id="main-wrapper">
+        <section class="main-wrapper-scroll">
+            <section class="section" style="background-color: #f1f1f1;">
+                <h2>Section 1</h2>
+            </section>
+            <section class="section" style="background-color: #ececec;">
+                <h2>Section 2</h2>
+            </section>
+            <section class="section" style="background-color: #cecece;">
+                <h2>Section 3</h2>
+            </section>
+        </section>
+    </section>
+
+
+    <script src="../magic-horizontal-scroll.js"></script>
+    <script>
+        // MagicHorizontalScroll(wrapper, scroller, section, scrollSpeed)
+        // wrapper: Обёртка
+        // scroller: Скролящийся элемент
+        // section: Одна секция
+        // scrollSpeed: Скорость прокрутки, изначальное значение 40 
+        
+        MagicHorizontalScroll({
+            wrapper: '#main-wrapper', 
+            scroller: '#main-wrapper .main-wrapper-scroll',
+            section: '.section',
+            scrollSpeed: 40,
+        });
+    </script>
+</body>
+</html>
